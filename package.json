@@ -1,0 +1,14 @@
+{
+  "name": "mentoriza",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mentoriza — plataforma de estudio guiado con IA, enfoque y mentorías (NovaDevs · Científica Sprint 2026)",
+  "scripts": {
+    "install:all": "npm ci --prefix backend && npm ci --prefix frontend",
+    "dev:api": "npm run dev --prefix backend",
+    "dev:web": "npm run dev --prefix frontend",
+    "build": "npm run build --prefix frontend && npm run build --prefix backend",
+    "start": "cd backend && STATIC_DIR=../frontend/dist npm run start:prod",
+    "test": "npm test --prefix backend"
+  }
+}

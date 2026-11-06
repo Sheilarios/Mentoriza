@@ -1,0 +1,311 @@
+{
+ "interviews": [
+  {
+   "number": 1,
+   "date": "2026-10-07",
+   "sprint": "Sprint 1",
+   "actorType": "Usuario",
+   "alias": "Salvador C.",
+   "organization": "Universidad Tecnologica del Perú",
+   "finding": "Hace tres semanas, con circuitos electrónicos: entendía la teoría pero se le complicaba resolverlos o le faltaba tiempo. Primero preguntó a amigos que ya dominaban el tema, quienes le enseñaron atajos.",
+   "quote": "\"Lo primero que hice fue preguntarle a amigos que tenía ahí, que ya habían comprendido mejor el tema, y con ayuda de ellos básicamente pude entenderlo mejor y encontrar atajos o formas más rápidas de hacerlo.\"",
+   "confirms": true,
+   "mentionedPay": false,
+   "decision": "Se identificó que la ayuda entre pares es su primera opción ante dificultades. Se acordó realizar un test de salida para medir el nivel real de comprensión."
+  },
+  {
+   "number": 2,
+   "date": "2026-10-07",
+   "sprint": "Sprint 1",
+   "actorType": "Usuario",
+   "alias": "Armando A.",
+   "organization": "Universidad Cientifica del sur",
+   "finding": "Nunca ha pagado por ayuda académica. Usa principalmente IA y buscadores como Google. También recurre a Google Académic y Dialnet. Como delegado, coordina reuniones con el profesor para resolver dudas grupales.",
+   "quote": "\"Yo al ser delegado, es el q origina la idea para buscar al profesor, siempre nos apoyamos y damos los resumenes entre nosotros\"",
+   "confirms": true,
+   "mentionedPay": false,
+   "decision": "Se identificó que la IA es la principal herramienta de consulta, aunque reconoce que puede cometer errores. Se acordó (implícitamente) considerar la posibilidad de crear un test de salida o mejorar la explicación de la IA."
+  },
+  {
+   "number": 3,
+   "date": "2026-10-08",
+   "sprint": "Sprint 1",
+   "actorType": "Usuario",
+   "alias": "Nicolas C.",
+   "organization": "Universidad Tecnologica del Perú",
+   "finding": "Revisa el tema del examen, repasa apuntes, practica ejercicios y refuerza los temas más complicados. Suele hacer las tareas uno o dos días antes de la fecha límite.",
+   "quote": "\"Solamente revisaba qué tema venía del examen, luego repasaba ciertos apuntes y practicaba algunos ejercicios.\" / \"Por lo general suelo realizar, hacer las tareas uno o dos días antes de la fecha límite de entrega.\"",
+   "confirms": true,
+   "mentionedPay": false,
+   "decision": "Se identificó que la IA no siempre resuelve dudas complejas y que la ayuda entre pares es más efectiva. Se acordó (implícitamente) considerar la posibilidad de crear un test de salida o mejorar la explicación de la IA."
+  },
+  {
+   "number": 4,
+   "date": "2026-10-08",
+   "sprint": "Sprint 1",
+   "actorType": "Usuario",
+   "alias": "Christi R.",
+   "organization": "Universidad Cientifica del sur",
+   "finding": "Repasa teoría con una amiga haciendo un \"ping-pong\" de preguntas, intenta resolver ejercicios por su cuenta y compara resultados con IA. Cuando se bloquea en ejercicios numéricos/manuales busca videos en YouTube, pero al no encontrar material paso a paso recurre a la IA preguntando en detalle. Nota que la IA termina desviándose si la duda es muy específica.",
+   "quote": "Conforme tú vas entrenando a tu inteligencia artificial, él te va explicando... pero hay un momento donde ya se desvía y no entiende el punto al que tú quieres llegar.",
+   "confirms": true,
+   "mentionedPay": false,
+   "decision": "Validamos que la IA generativa estándar pierde precisión en ejercicios prácticos paso a paso, por lo que acordamos desarrollar explicaciones metodológicas guiadas estructuradas según la rúbrica del curso."
+  },
+  {
+   "number": 5,
+   "date": "2026-10-08",
+   "sprint": "Sprint 1",
+   "actorType": "Usuario",
+   "alias": "Gandhi V.",
+   "organization": "Universidad Cientifica del sur",
+   "finding": "Sube todo el material en PDF a NotebookLM y genera cuestionarios/flashcards o prompts antes de las pruebas. Cuando se queda bloqueado por falta de pautas claras del profesor (ej. Construcción de Software), acude a compañeros para consensuar criterios y luego le carga todo el contexto del curso a la IA antes de consultar, ya que si se consulta en abierto la respuesta es poco sólida y le falta el factor humano.",
+   "quote": "Cuando quiero resolver una duda acerca de mis cursos, no lo hago sin dar la información del curso. Primero le doy toda la información posible... si no siento que no puede dar una respuesta sólida.",
+   "confirms": true,
+   "mentionedPay": false,
+   "decision": "Acordamos incorporar la funcionalidad de cargar de manera centralizada el sílabo y contexto del curso para evitar respuestas genéricas de la IA."
+  },
+  {
+   "number": 6,
+   "date": "2026-10-15",
+   "sprint": "Sprint 2",
+   "actorType": "Usuario",
+   "alias": "Mayra V.",
+   "organization": "Universidad Privada San Juan Bautista",
+   "finding": "Retomó los estudios universitarios después de aproximadamente 20 años, por lo que presenta dificultades para recordar y aplicar conceptos matemáticos. Aunque comprende algunos ejercicios explicados en clase, necesita reforzar los temas y buscó apoyo particular. Destaca que las explicaciones personalizadas y la paciencia de su asesor le permitieron comprender mejor los procedimientos y pasar de recibir ayuda para resolver los ejercicios a intentarlos por su cuenta. También identificó a compañeras con dificultades similares en Matemáticas.",
+   "quote": "“Entonces con la persona particular, la verdad que sí. O sea, sí he tenido paciencia, me puede explicar y sí lo he podido comprender.”",
+   "confirms": true,
+   "mentionedPay": false,
+   "decision": "Se refuerza la necesidad de ofrecer explicaciones personalizadas, pacientes y paso a paso, que permitan al estudiante comprender los procedimientos matemáticos y resolver ejercicios de forma autónoma. También se identifica la oportunidad de facilitar el aprendizaje colaborativo entre estudiantes con dificultades similares."
+  },
+  {
+   "number": 7,
+   "date": "2026-10-15",
+   "sprint": "Sprint 2",
+   "actorType": "Usuario",
+   "alias": "Nayely C.",
+   "organization": "Universidad Cientifica del sur",
+   "finding": "Para estudiar Matemáticas, elabora un formulario con las fórmulas de las PPT y resuelve retos gamificados. Cuando tiene dificultades para comprender un tema o desarrollar un trabajo, busca más información y consulta a sus compañeros para evitar errores. También utiliza ChatGPT y Google para investigar temas y verificar respuestas. Durante la semana de parciales aprovecha sus tiempos libres para estudiar los cursos cuyos exámenes están más próximos.",
+   "quote": "“ChatGPT o Google, este, no sé, más que todo para investigar los temas o para verificar las respuestas.” / “Que cada uno es bueno en diferentes temas y creo que podríamos ayudarnos.”",
+   "confirms": true,
+   "mentionedPay": false,
+   "decision": "Se refuerza la importancia de ofrecer explicaciones que ayuden a resolver dudas académicas y verificar respuestas. También se identifica la oportunidad de incorporar el aprendizaje colaborativo, ya que los estudiantes pueden complementarse según los temas que dominan."
+  },
+  {
+   "number": 8,
+   "date": "2026-10-15",
+   "sprint": "Sprint 2",
+   "actorType": "Usuario",
+   "alias": "Alonso T.",
+   "organization": "TECSUP",
+   "finding": "Se quedó trabado 1.5 horas por un error de código que crasheaba su proyecto de programación. Primero revisó el código, luego analizó el problema con compañeros y, al no hallar solución, buscó en documentación oficial de Microsoft y foros. No ha pagado por ayuda porque considera que todo se puede aprender investigando por cuenta propia en internet.",
+   "quote": "\"Lo que entendía era, en general, el tema, pero el error específico no lo logré identificar... analicé el problema con unos compañeros... me tomó aproximadamente una hora y media resolverlo.\" / \"No, hasta el momento no he pagado... nunca me he topado con problemas que no se puedan aprender investigando un poco en internet.\"",
+   "confirms": true,
+   "mentionedPay": false,
+   "decision": "Se ratifica que el soporte debe enfocarse en depuración guiada de errores prácticos específicos y no en teoría general. Se descarta el cobro directo de entrada al preferir el estudiante la autoexploración gratuita."
+  },
+  {
+   "number": 9,
+   "date": "2026-10-15",
+   "sprint": "Sprint 2",
+   "actorType": "Usuario",
+   "alias": "Angie R.",
+   "organization": "Universidad Tecnológica del Perú",
+   "finding": "Enfrenta bloqueos creativos y de estructuración en entregas complejas (tesis/diseño). Para resolver dudas y validar avances usa Gemini Pro y Claude, subiendo la rúbrica docente junto con su trabajo para que la IA evalúe si faltan criterios o hay errores. Nunca ha pagado por apoyo académico o suscripciones.",
+   "quote": "\"Yo mando la rúbrica que mis profes me dan... y le mando el trabajo que yo hago junto con eso a la IA para que me diga si está bien o si me está faltando algo... para asegurarme de que no se me escape nada.\" / \"No, en mi caso no, no he pagado por ahora.\"",
+   "confirms": true,
+   "mentionedPay": false,
+   "decision": "Se validó la necesidad de integrar la rúbrica y criterios de evaluación del docente como input central de Mentoriza para estructurar y corregir los entregables del alumno."
+  },
+  {
+   "number": 10,
+   "date": "2026-10-15",
+   "sprint": "Sprint 2",
+   "actorType": "Usuario",
+   "alias": "Jose B.",
+   "organization": "Univesidad San Ignacio Loyola",
+   "finding": "Sufre bloqueos en ejercicios prácticos de álgebra y matemáticas de programación, tardando de 1.5 a 2 horas en un solo problema. Cuando no entiende, contrasta la misma consulta en Google, Claude, ChatGPT y Gemini; si dan respuestas contradictorias, descarta la IA y busca en documentación. No ha pagado por ayuda fuera de la universidad.",
+   "quote": "\"Normalmente me lleva... una hora, hora y media hasta dos centrándome solo en un ejercicio... la paso por Claude, GPT, Gemini... si veo que dan resultados muy distintos ya ignoro totalmente la IA.\" / \"¿Pagar por ayuda fuera?... Más que la universidad, fuera no.\"",
+   "confirms": true,
+   "mentionedPay": false,
+   "decision": "Se incorporó la necesidad de generar confianza y trazabilidad en la resolución de problemas numéricos mediante pasos verificables, evitando respuestas alucinadas o divergentes de la IA."
+  },
+  {
+   "number": 11,
+   "date": "2026-10-15",
+   "sprint": "Sprint 2",
+   "actorType": "Usuario",
+   "alias": "Mauricio M.",
+   "organization": "Universidad Tecnologica del Perú",
+   "finding": "Por falta de tiempo en el día concentra todo su estudio en la noche y se trasnocha avanzando entregables extensos que tardan de 45 a 60 minutos por duda compleja. Ante bloqueos revisa primero su teoría y luego recurre a la IA para que le recopile información o le explique fragmentos de código hechos por compañeros de grupo, facilitando la integración de su parte. Nunca ha pagado por ayuda académica ni suscripciones.",
+   "quote": "\"Mayormente tengo el día ocupado, así que ocupo la noche para poder estudiar y me madrugo haciendo trabajos.\" / \"Le pedí que me explicara cierta parte de código... para poder entender la manera en que programan mis compañeros para así yo poder integrar cosas.\" / \"No, no he pagado.\"",
+   "confirms": true,
+   "mentionedPay": false,
+   "decision": "Se corroboró la hipótesis de horarios de estudio nocturnos/madrugadas y se incorporó el caso de uso de comprensión colaborativa de código entre integrantes de un equipo de trabajo."
+  },
+  {
+   "number": 12,
+   "date": "2026-11-05",
+   "sprint": "Sprint 3",
+   "actorType": "Usuario",
+   "alias": "Brayan C.",
+   "organization": "UNTELS",
+   "finding": "Estudia mayormente de noche después de sus clases de instituto. Ante bloqueos en el desarrollo backend, intenta resolverlo solo por unos días; si no puede, recurre al profesor. Usa IA (ChatGPT, Claude) para dudas o limpieza de datos, aunque a veces falla por no saber formular bien el prompt.",
+   "quote": "Pues hago mayormente de noche, nueve hasta que me dé un poco de sueño, once y medio así después de clases ya que luego de la universidad tengo clases de instituto aparte\". / \"Quizás fue más problema mío al formular mal lo que he querido y le había mandado otra respuesta",
+   "confirms": true,
+   "mentionedPay": false,
+   "decision": "Se reafirma la necesidad de que la herramienta guíe al usuario (no solo dé respuestas), ya que el estudiante reconoce que su principal falla al usar IA es no saber cómo preguntar (formular el prompt). Además, se valida el uso nocturno para estudiar."
+  },
+  {
+   "number": 13,
+   "date": "2026-11-05",
+   "sprint": "Sprint 3",
+   "actorType": "Usuario",
+   "alias": "Juan A.",
+   "organization": "Universidad Tecnologica del Perú",
+   "finding": "Ante bloqueos en cursos prácticos (redes, JavaScript, curso integrador), pierde un día entero buscando entender el tema tras perder una clase. Revisa materiales de la plataforma y tutoriales de YouTube, además de usar Gemini casi a diario para generar cuadernos de estudio, resúmenes y ejercicios prácticos. No ha pagado por ayuda externa porque considera suficientes sus técnicas de estudio y herramientas gratuitas.",
+   "quote": "\"Tuve que estudiar un día entero porque no entendía bien el tema... me fue bien, pero me costó bastante tiempo.\" / \"Uso IA para estudiar regularmente o hacerme cuadernos con los temas... lo uso casi diario.\" / \"No, no he pagado por ayuda académica. Estudio solo y las herramientas y mi técnica me sirven bastante.\"",
+   "confirms": true,
+   "mentionedPay": false,
+   "decision": "Se valida la necesidad de acelerar la síntesis y estructuración de contenidos perdidos de clase para evitar que el alumno invierta días enteros recuperando el hilo, integrando módulos de práctica interactiva y resúmenes guiados. Asimismo, se reafirma la inviabilidad de un cobro directo de suscripción ante el uso exclusivo de alternativas gratuitas."
+  },
+  {
+   "number": 14,
+   "date": "2026-11-05",
+   "sprint": "Sprint 3",
+   "actorType": "Usuario",
+   "alias": "Jarumi D.",
+   "organization": "Universidad Tecnologica del Perú",
+   "finding": "En el curso Integrador sufrió bloqueos al ser un tema nuevo e investigativo. Ante dudas acude prioritariamente a compañeros que dominan la materia para avanzar en equipo. Utiliza frecuentemente ChatGPT y Gemini a diario para generar formularios y repasar documentos de clase. Sí pagó en el pasado a un compañero por hacerle una tarea individual difícil cuando la IA no estaba tan extendida, pero afirma que hoy en día no gastaría dinero teniendo a disposición herramientas de IA gratuitas",
+   "quote": "Recorrí a un compañero que dominaba el tema y el curso... para tener un buen resultado. / \"Utilizo no solamente ChatGPT, sino también Gemini, que me ayuda a realizar formularios para mis próximos exámenes.\" / \"Recuerdo que sí he pagado para una tarea académica... a un compañero que lo realizó... Si estuviera la inteligencia artificial, creo que no hubiera gastado.\"",
+   "confirms": true,
+   "mentionedPay": true,
+   "decision": "Se valida que el estudiante de Derecho utiliza la IA para síntesis de documentos y generación de autoevaluaciones (formularios). Se reconfirma la resistencia a realizar desembolsos recurrentes de dinero en la actualidad al sustituir el pago a terceros por herramientas de IA generativa de acceso libre."
+  },
+  {
+   "number": 15,
+   "date": "2026-11-07",
+   "sprint": "Sprint 3",
+   "actorType": "Usuario",
+   "alias": "Angelina M.",
+   "organization": "Universidad Cientifica del sur",
+   "finding": "Cuando se bloquea en trabajos prácticos donde la teoría no basta, recurre a amigas del curso para hacer borradores y recibir retroalimentación. Usa la IA frecuentemente para complementar información rápida o practicar temas. Sí ha pagado por ayuda (maratón/repaso para un examen parcial) porque no conocía a nadie en el curso y no podía contactar al profesor hasta la siguiente semana; valora de los grupos pagados que van a \"preguntas fijas\" y ejercicios específicos.",
+   "quote": "No entendía muy bien la consigna... lo que hice fue preguntar a mis amigas, me dieron un poco de idea de cómo debería ser... y mis amigas me retroalimentaron. / \"Uso la IA muchas veces para complementar o ver algún punto que me falta.\" / \"He pagado sí, una vez para un parcial y me fue súper bien porque el grupo donde pagué iban como que con algunas fijas... ya no podía contactar con el profesor y no conocía a alguien en el curso.\"",
+   "confirms": true,
+   "mentionedPay": true,
+   "decision": "Se valida que cuando el estudiante no tiene una red de pares en un curso o cuando las dudas surgen en horarios fuera de clase, busca opciones de refuerzo enfocado en \"ejercicios/preguntas fijas\". Se confirma la oportunidad de que Mentoriza actúe como ese espacio inmediato de resolución práctica y retroalimentación entre pares."
+  }
+ ],
+ "hypotheses": [
+  {
+   "number": 1,
+   "text": "Creemos que los estudiantes universitarios de Lima recurren primero a compañeros de clase por WhatsApp cuando se traban en un ejercicio práctico porque consideran que sus pares conocen el formato exacto del docente.",
+   "test": "Preguntar en las entrevistas del corte qué hicieron en primer lugar la última vez que no entendieron un ejercicio fuera de clase.",
+   "expected": "Al menos 6 de 11 entrevistados afirman que su primera acción fue escribirle a un compañero o grupo del curso.",
+   "priority": "Alta",
+   "result": "Se confirmó"
+  },
+  {
+   "number": 2,
+   "text": "Creemos que los estudiantes universitarios abandonan las respuestas de herramientas de IA genérica (como ChatGPT) en ejercicios numéricos o de especialidad porque la IA carece del contexto del sílabo y comete errores en el procedimiento paso a paso.",
+   "test": "Preguntar en las entrevistas cómo les fue la última vez que intentaron resolver un problema específico de carrera con IA y qué hicieron con la respuesta.",
+   "expected": "Al menos 4 de 11 entrevistados relatan que la IA les dio respuestas erróneas, genéricas o que requirió demasiado esfuerzo de contextualización.",
+   "priority": "Alta",
+   "result": "Se confirmó"
+  },
+  {
+   "number": 3,
+   "text": "Creemos que los estudiantes universitarios cuentan con hábitos previos de pago por soporte académico externo (profesores particulares o apps) para evitar desaprobar asignaturas complejas (utilizado como proxy de hábito de pago)",
+   "test": "Preguntar en las entrevistas si en el último año han destinado dinero a profesores particulares, academias o suscripciones de estudio.",
+   "expected": "Al menos 4 de 11 entrevistados declaran haber pagado dinero real por soporte académico externo en el último año.",
+   "priority": "Alta",
+   "result": "Se cayó"
+  },
+  {
+   "number": 4,
+   "text": "Creemos que los estudiantes universitarios concentran su estudio autónomo en horario nocturno (a partir de las 8:00 p.m.) porque los traslados y horarios de clase les impiden estudiar durante la tarde.",
+   "test": "Preguntar en las entrevistas en qué franja horaria exacta realizaron sus sesiones de estudio individual durante la última semana.",
+   "expected": "Al menos 7 de 11 entrevistados indican que estudian después de las 9:00 p.m. o durante los fines de semana.",
+   "priority": "Media",
+   "result": "Se confirmó"
+  },
+  {
+   "number": 5,
+   "text": "Creemos que los estudiantes universitarios acuden a las tutorías y asesorías oficiales de su universidad para resolver dudas fuera de clase porque son brindadas institucionalmente.",
+   "test": "Preguntar en las entrevistas si acudieron a las sesiones de asesoría o tutoría programadas por su universidad en las últimas 4 semanas.",
+   "expected": "Al menos 5 de 11 entrevistados declaran haber asistido a las sesiones de tutoría/asesoría oficial de su universidad en el último mes",
+   "priority": "Media",
+   "result": "Se cayó"
+  },
+  {
+   "number": 6,
+   "text": "Creemos que los estudiantes universitarios procesan y estructuran manualmente apuntes y diapositivas en resúmenes previos antes de resolver ejercicios tipo examen porque el material de clase se encuentra disperso.",
+   "test": "Preguntar en las entrevistas cuál fue el paso a paso previo antes de ponerse a practicar ejercicios para su última evaluación.",
+   "expected": "Al menos 6 de 11 entrevistados explican que tuvieron que recopilar y resumir material disperso de varias fuentes antes de resolver la guía.",
+   "priority": "Baja",
+   "result": "Se confirmó"
+  }
+ ],
+ "tests": [
+  {
+   "number": 1,
+   "user": "Salvador Calderón (UTP)",
+   "completed": true,
+   "friction": "Buscó inicialmente un botón de resolución automática en lugar del flujo guiado por pasos.",
+   "quote": "Me gusta que me pregunte qué entiendo primero en vez de soltarme el código de golpe, aunque al inicio busqué el botón para que me lo resolviera todo rápido.",
+   "minutes": 3.5
+  },
+  {
+   "number": 2,
+   "user": "Christi Retes (UCSUR)",
+   "completed": true,
+   "friction": "Al pegar el texto de la rúbrica no estaba segura si el sistema ya lo había procesado hasta ver el mensaje.",
+   "quote": "Que tome en cuenta la rúbrica está excelente porque evita que la IA alucine cosas que el profe no pide, solo faltaba un check verde más visible de confirmación.",
+   "minutes": 4.2
+  },
+  {
+   "number": 3,
+   "user": "Alonso Torres (TECSUP)",
+   "completed": true,
+   "friction": "Dudó en la selección de planes pensando que le exigiría tarjeta de crédito para la demostración.",
+   "quote": "Pensé que me cobraría al entrar; cuando vi que el plan de prueba era libre probé el error de programación y la pista para depurar fue precisa.",
+   "minutes": 3.8
+  },
+  {
+   "number": 4,
+   "user": "Angie Rodríguez (UTP)",
+   "completed": false,
+   "friction": "Intentó loguearse por convenio universitario y su institución no estaba en la lista de prueba.",
+   "quote": "No vi de inmediato la opción de cuenta personal independiente porque me fui de frente a buscar mi universidad en la lista.",
+   "minutes": 5.0
+  },
+  {
+   "number": 5,
+   "user": "José Antonio Benavides (USIL)",
+   "completed": true,
+   "friction": "Sugirió botones de entrada rápida para fórmulas o enunciados largos de matemáticas.",
+   "quote": "El temporizador de enfoque ayuda a no distraerse y las pistas paso a paso son mucho más claras que preguntar en foros desordenados.",
+   "minutes": 3.0
+  }
+ ],
+ "changes": [
+  {
+   "number": 1,
+   "change": "Separación visual nítida en el inicio entre acceso por convenio institucional y registro gratuito personal.",
+   "evidence": "La usuaria Angie no encontró de inmediato el acceso personal al no ver su universidad en la lista.",
+   "priority": "Alta"
+  },
+  {
+   "number": 2,
+   "change": "Indicador de estado visual (badge verde de confirmación) al procesar la rúbrica o sílabo del curso.",
+   "evidence": "La usuaria Christi manifestó dudas sobre si los criterios del docente ya estaban cargados en la sesión.",
+   "priority": "Alta"
+  },
+  {
+   "number": 3,
+   "change": "Inclusión de la etiqueta 'Prueba sin tarjeta ni costo' en la pantalla de bienvenida y planes.",
+   "evidence": "El usuario Alonso reportó desconfianza inicial ante la posibilidad de un cobro no transparente.",
+   "priority": "Media"
+  }
+ ]
+}

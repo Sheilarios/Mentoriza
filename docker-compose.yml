@@ -1,0 +1,35 @@
+# Mentoriza completo en tu computadora o servidor:
+#   cp .env.example .env   (edita JWT_SECRET y, si tienes, AI_API_KEY)
+#   docker compose up -d --build
+#   Abre http://localhost:4000
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: mentoriza
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-mentoriza}
+      POSTGRES_DB: mentoriza
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U mentoriza -d mentoriza"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  app:
+    build: .
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    env_file: .env
+    environment:
+      DATABASE_URL: postgresql://mentoriza:${POSTGRES_PASSWORD:-mentoriza}@db:5432/mentoriza?schema=public
+      PORT: 4000
+    ports:
+      - "${APP_PORT:-4000}:4000"
+
+volumes:
+  pgdata:

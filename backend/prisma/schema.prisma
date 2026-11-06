@@ -1,0 +1,245 @@
+// Mentoriza — modelo de datos (PostgreSQL)
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "debian-openssl-3.0.x", "linux-musl-openssl-3.0.x"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  STUDENT
+  MENTOR
+  UNI_ADMIN
+  ADMIN
+}
+
+enum Plan {
+  FREE
+  PREMIUM
+  UNIVERSITY
+}
+
+enum MentoringStatus {
+  SEARCHING
+  MATCHED
+  IN_ROOM
+  DONE
+  CANCELLED
+}
+
+model University {
+  id             String   @id @default(cuid())
+  name           String
+  shortName      String
+  domain         String   @unique
+  accessCodeHash String
+  monthlyCredits Int      @default(4)
+  active         Boolean  @default(true)
+  createdAt      DateTime @default(now())
+  users          User[]
+}
+
+model User {
+  id              String      @id @default(cuid())
+  email           String      @unique
+  name            String
+  passwordHash    String
+  role            Role        @default(STUDENT)
+  plan            Plan        @default(FREE)
+  universityId    String?
+  university      University? @relation(fields: [universityId], references: [id])
+  career          String?
+  cycle           Int?
+  onboarded       Boolean     @default(false)
+  darkMode        Boolean?
+  credits         Int         @default(0)
+  creditsMonth    String?
+  streakCount     Int         @default(0)
+  streakLast      String?
+  premiumSince    DateTime?
+  premiumRenewAt  DateTime?
+  createdAt       DateTime    @default(now())
+  updatedAt       DateTime    @updatedAt
+  courses         Course[]
+  questions       Question[]
+  focusSessions   FocusSession[]
+  mentorings      Mentoring[]
+  payments        Payment[]
+  mentorProfile   Mentor?
+}
+
+model Course {
+  id        String     @id @default(cuid())
+  userId    String
+  user      User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  name      String
+  emoji     String     @default("📘")
+  syllabus  String[]   @default([])
+  rubric    String[]   @default([])
+  covered   String[]   @default([])
+  createdAt DateTime   @default(now())
+  questions Question[]
+  mentorings Mentoring[]
+}
+
+model Question {
+  id         String   @id @default(cuid())
+  userId     String
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  courseId   String
+  course     Course   @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  text       String
+  topic      String
+  steps      String[]
+  done       Boolean[]
+  rubricHint String
+  checkQ     String
+  checkA     String
+  attempts   Int      @default(0)
+  solved     Boolean  @default(false)
+  source     String   @default("local")
+  createdAt  DateTime @default(now())
+
+  @@index([userId, createdAt])
+}
+
+model FocusSession {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  minutes   Int
+  createdAt DateTime @default(now())
+}
+
+model Mentor {
+  id        String      @id @default(cuid())
+  name      String
+  headline  String
+  courses   String[]    @default([])
+  rating    Float       @default(5)
+  active    Boolean     @default(true)
+  userId    String?     @unique
+  user      User?       @relation(fields: [userId], references: [id])
+  sessions  Mentoring[]
+}
+
+model Mentoring {
+  id          String          @id @default(cuid())
+  studentId   String
+  student     User            @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  courseId    String?
+  course      Course?         @relation(fields: [courseId], references: [id], onDelete: SetNull)
+  topic       String
+  urgency     String
+  minutes     Int
+  offerPrice  Int             @default(0)
+  finalPrice  Int             @default(0)
+  creditsUsed Int             @default(0)
+  status      MentoringStatus @default(SEARCHING)
+  offers      Json            @default("[]")
+  mentorId    String?
+  mentor      Mentor?         @relation(fields: [mentorId], references: [id])
+  rating      Int?
+  createdAt   DateTime        @default(now())
+  endedAt     DateTime?
+  messages    Message[]
+}
+
+model Message {
+  id          String    @id @default(cuid())
+  mentoringId String
+  mentoring   Mentoring @relation(fields: [mentoringId], references: [id], onDelete: Cascade)
+  from        String
+  text        String
+  createdAt   DateTime  @default(now())
+}
+
+model Payment {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  concept   String
+  amount    Decimal  @db.Decimal(10, 2)
+  status    String   @default("DEMO")
+  provider  String   @default("demo")
+  createdAt DateTime @default(now())
+}
+
+model Lead {
+  id         String   @id @default(cuid())
+  university String
+  email      String
+  position   String
+  createdAt  DateTime @default(now())
+}
+
+// ---------- Evidencia del programa Científica Sprint 2026 ----------
+
+model Interview {
+  id           String   @id @default(cuid())
+  number       Int      @unique
+  date         DateTime
+  sprint       String
+  actorType    String
+  alias        String
+  organization String
+  finding      String
+  quote        String
+  confirms     Boolean
+  mentionedPay Boolean
+  decision     String
+}
+
+model Hypothesis {
+  id       String @id @default(cuid())
+  number   Int    @unique
+  text     String
+  test     String
+  expected String
+  priority String
+  result   String
+}
+
+model MarketLevel {
+  id       String @id @default(cuid())
+  level    String @unique
+  quantity Int
+  method   String
+  source   String
+  order    Int
+}
+
+model CostItem {
+  id     String  @id @default(cuid())
+  kind   String
+  label  String
+  amount Decimal @db.Decimal(10, 2)
+  note   String
+  order  Int
+}
+
+model Setting {
+  key   String @id
+  value Json
+}
+
+model PrototypeTest {
+  id        String  @id @default(cuid())
+  number    Int     @unique
+  user      String
+  completed Boolean
+  friction  String
+  quote     String
+  minutes   Float
+}
+
+model PrototypeChange {
+  id       String @id @default(cuid())
+  number   Int    @unique
+  change   String
+  evidence String
+  priority String
+}
